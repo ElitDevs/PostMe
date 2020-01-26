@@ -16,7 +16,7 @@ PostMe is a project created with React for a workshop at <www.Elit.dz> 🏠 with
   - [❗️] 👉 Create our First Component.
   - [❗️] 👉 Understanding The Diffrence between State / Props.
   - [❗️] 👉 Adding Our First Container.
-  - [❗️] 👉 Understanding the Diffrence Between Smart Component & Dumb Component.
+  - [❗️] 👉 Understanding the Diffrence Between Smart Component & Dumb Component or stateFul Component & stateLess Component.
   - [❗️] 👉 Understanding LifeCycle Methods.
   - [❗️] 👉 Understanding Events.
   - [❗️] 👉 Adding other Libs :
