@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class MyButton extends Component {
   render() {
-    return <button>Hello i'm an your first Component</button>;
+    return <button>{this.props.title}</button>;
   }
 }
 
