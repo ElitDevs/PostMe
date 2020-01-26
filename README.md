@@ -2,6 +2,8 @@
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
 ## description
 
 PostMe is a project created with React for a workshop at <www.Elit.dz> 🏠 with `GIS-Team` 🏄
