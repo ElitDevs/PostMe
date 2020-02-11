@@ -1,12 +1,26 @@
 import React, { Component } from "react";
 import "./App.css";
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleclick = id => {
     console.log("you clicked on :", id);
+    let element = document.getElementById("postItem");
+
+    switch (id) {
+      case "id1":
+        element.style.background = "cornflowerblue";
+        element.style.color = "white";
+        break;
+      case "id2":
+        element.style.background = "darkblue";
+        element.style.color = "white";
+        break;
+      case "id3":
+        element.style.background = "crimson";
+        element.style.color = "white";
+        break;
+      default:
+        break;
+    }
   };
 
   render() {
@@ -19,6 +33,7 @@ class App extends Component {
         </div>
         <textarea
           className="postItem"
+          id="postItem"
           defaultValue=""
           placeholder="write something ..."
         ></textarea>
