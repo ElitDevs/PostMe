@@ -16,7 +16,20 @@ class App extends Component {
           defaultValue=""
           placeholder="write something ..."
         ></textarea>
-        <div className="controlButtons"></div>
+        <div className="controlButtons">
+          <div className="postItemControl postItemColor1"></div>
+          <div className="postItemControl postItemColor2"></div>
+          <div className="postItemControl postItemColor3"></div>
+          <div className="postItemControl postItemColor4"></div>
+          <div className="postItemControl postItemColor5"></div>
+          <div className="postItemControl postItemColor6"></div>
+          <div className="postItemControl postItemColor7"></div>
+          <div className="postItemControl postItemColor8"></div>
+          <div className="postItemControl postItemColor9"></div>
+          <div className="postItemControl postItemColor10"></div>
+          <div className="postItemControl postItemColor11"></div>
+          <div className="postItemControl postItemColor12"></div>
+        </div>
       </div>
     );
   }

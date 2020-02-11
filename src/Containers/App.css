@@ -6,7 +6,6 @@
   width: 800px;
   margin: 0 auto;
 }
-
 .postItem {
   width: 100%;
   height: 100%;
@@ -19,4 +18,52 @@
   outline: none;
   padding: 10%;
   resize: none;
+}
+
+.controlButtons {
+  display: flex;
+}
+.controlButtons .postItemControl {
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  margin: 1% 10px;
+  border-radius: 50%;
+}
+
+.postItemColor1 {
+  background-color: cornflowerblue;
+}
+.postItemColor2 {
+  background-color: darkblue;
+}
+.postItemColor3 {
+  background-color: crimson;
+}
+.postItemColor4 {
+  background-color: darkgreen;
+}
+.postItemColor5 {
+  background-color: darkcyan;
+}
+.postItemColor6 {
+  background-color: black;
+}
+.postItemColor7 {
+  background-color: teal;
+}
+.postItemColor8 {
+  background-color: tan;
+}
+.postItemColor9 {
+  background-color: chocolate;
+}
+.postItemColor10 {
+  background-color: yellowgreen;
+}
+.postItemColor11 {
+  background-color: blueviolet;
+}
+.postItemColor12 {
+  background-color: snow;
 }
