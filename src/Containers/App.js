@@ -7,17 +7,16 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <div>
           <h1 style={{ textAlign: "center" }}>Welcome to Post Me</h1>
         </div>
-        <div className="App">
-          <textarea
-            className="postItem"
-            defaultValue=""
-            placeholder="write something ..."
-          ></textarea>
-        </div>
+        <textarea
+          className="postItem"
+          defaultValue=""
+          placeholder="write something ..."
+        ></textarea>
+        <div className="controlButtons"></div>
       </div>
     );
   }
