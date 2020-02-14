@@ -27,7 +27,7 @@ class App extends Component {
           handleClick={this.handleClick}
           title="Title Component 02"
           count={this.state.count}
-        />
+        />        
       </div>
     );
   }
