@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MyButton from "../Components/MyButton";
 import MyButtonDumb from "../Components/MyButtonDumb";
+import MyPost from "../Components/myPost";
 
 class App extends Component {
   constructor(props) {
@@ -20,15 +21,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <h1>Welcome to React</h1>
         <MyButton title="baraka larbi" />
         <MyButtonDumb
           handleClick={this.handleClick}
           title="Title Component 02"
           count={this.state.count}
-        />        
-      </div>
+        />
+        
+        <MyPost/>
+      </>
     );
   }
 }
