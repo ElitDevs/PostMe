@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MyButton from "../Components/MyButton";
 import MyButtonDumb from "../Components/MyButtonDumb";
 import MyPost from "../Components/myPost";
+import Colors from "../Components/colors";
 
 class App extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div className="main">
         <h1>Welcome to React</h1>
         <MyButton title="baraka larbi" />
         <MyButtonDumb
@@ -29,9 +30,11 @@ class App extends Component {
           title="Title Component 02"
           count={this.state.count}
         />
-        
-        <MyPost/>
-      </>
+
+
+        <div className="btn"> <MyPost /></div>
+        <div className="btnSwitch"> <Colors /></div>
+      </div>
     );
   }
 }
