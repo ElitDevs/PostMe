@@ -5,7 +5,8 @@ class App extends Component {
   handleclick = id => {
     console.log("you clicked on :", id);
     let element = document.getElementById("postItem");
-
+    
+    if(element!==null || element!==undefined) {
     switch (id) {
       case "id1":
         element.style.background = "cornflowerblue";
@@ -21,6 +22,7 @@ class App extends Component {
         break;
       default:
         break;
+     }
     }
   };
 
