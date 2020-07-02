@@ -1,0 +1,87 @@
+:root {
+  --title-color: #245095;
+  --selected-title-color: #43464D;
+  --bg-color: #E6E7EB;
+  --lines-color: #D6D7DB;
+  --white: #ffffff;
+}
+
+.postHeadContainer {
+  display: flex;
+  background-color: var(--bg-color);
+  height: 40px;
+  padding: 5px 10px;
+  align-items: center;
+  border-bottom: 1px solid var(--lines-color);
+}
+
+.postHeadContainer .createPost:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: var(--lines-color);
+  position: absolute;
+  right: -8px;
+}
+
+.postHeadContainer .createPost.selected:before,
+.postHeadContainer .photoVideo.selected:before {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 50px;
+  bottom: -11px;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 8px solid var(--white);
+}
+
+.postHeadContainer .createPost,
+.postHeadContainer .photoVideo {
+  display: flex;
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.postHeadContainer .createPost .icon,
+.postHeadContainer .photoVideo .icon {
+  display: flex;
+  width: 15px;
+  align-items: center;
+}
+
+.postHeadContainer .createPost .icon img,
+.postHeadContainer .photoVideo .icon img {
+  width: 100%;
+}
+
+.postHeadContainer .createPost .title,
+.postHeadContainer .photoVideo .title {
+  margin-left: 5px;
+  color: var(--title-color);
+}
+
+.postHeadContainer .selected .title {
+  color: var(--selected-title-color)
+}
+
+.postHeadContainer .close {
+  margin-left: auto;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.postHeadContainer .close .icon{
+  height: 15px;
+}
+
+.postHeadContainer .close .icon img{
+  height: 100%;
+}
