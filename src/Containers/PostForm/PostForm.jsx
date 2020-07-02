@@ -8,12 +8,25 @@ import PostFoot from '../../Components/PostFoot/PostFoot'
 import './PostForm.css'
 
 export default class PostForm extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      postInputBackground: "#ffffff"
+    }
+  }
+
+  onBackgroundChange = (postInputBackground) => this.setState({ postInputBackground })
+
   render() {
+
+    const { postInputBackground } = this.state
+
     return (
       <div className="postFormContainer">
         <PostHead />
-        <PostInput />
-        <PostControls />
+        <PostInput background={postInputBackground} />
+        <PostControls onBackgroundChange={this.onBackgroundChange} />
         <PostFoot />
       </div>
     )

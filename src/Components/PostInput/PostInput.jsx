@@ -20,9 +20,10 @@ export default class PostInput extends Component {
   render() {
 
     const { post } = this.state
+    const { background } = this.props
     
     return (
-      <div className="postInputContainer">
+      <div className="postInputContainer" style={{ background }}>
         <div className="profilePicture">
           <img src={profilePicture} alt="profile" />
         </div>

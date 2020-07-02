@@ -36,11 +36,15 @@ export class PostControls extends Component {
     ]
   }
 
-  onBackgroundSelect = ( bgIndex ) => this.setState({ bgIndex })
+  onBackgroundSelect = ( bgIndex ) => {
+    const { onBackgroundChange } = this.props 
+    this.setState({ bgIndex }, () => onBackgroundChange(this.postBackgrounds[bgIndex]))
+  }
 
   render() {
 
     const { bgIndex } = this.state
+
     return (
       <div className="postControlsContainer">
         <div className="postBackgroundsContainer">
