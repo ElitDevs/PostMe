@@ -1,0 +1,14 @@
+:root {
+  --border-color: #d6d7db;
+  --shdow-color: #363636;
+}
+
+.postFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px -3px var(--shdow-color);
+}
